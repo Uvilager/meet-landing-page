@@ -6,9 +6,9 @@
 }
 
 body {
+  text-align: center;
   background-color: #FAFAFA;
   font-family: 'Red Hat Display', sans-serif;
-  text-align: center;
 }
 
 header {
@@ -27,7 +27,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
   position: relative;
 }
 
@@ -35,7 +34,7 @@ header .meet {
   margin: 48px auto 54px auto;
 }
 
-header .icons {
+header .hero-desktop {
   display: none;
 }
 
@@ -49,7 +48,7 @@ header h1 {
   font-size: 40px;
   color: #28283d;
   margin-bottom: 24px;
-  padding: 0 24px;
+  padding: 0 50px;
 }
 
 header p {
@@ -60,7 +59,10 @@ header p {
   margin-bottom: 32px;
 }
 
-.btn1 {
+.btn1,
+.btn2 {
+  margin: 0 auto;
+  display: block;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 900;
   border: none;
@@ -74,23 +76,14 @@ header p {
   margin-bottom: 16px;
 }
 
-.btn1 span {
+.btn1 span,
+.btn2 span {
   color: #8fe3f9;
 }
 
 .btn2 {
-  font-family: 'Red Hat Display', sans-serif;
-  display: block;
-  margin: 0 auto;
-  border-radius: 30px;
-  border: none;
   width: 139px;
-  height: 58px;
   background-color: #855fb1;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 26px;
   margin-bottom: 64px;
 }
 
@@ -124,21 +117,6 @@ header p {
   line-height: 26px;
   color: #87879d;
   font-weight: 900;
-}
-
-@media (min-width: 600px) {
-  .hero-mobile {
-    width: 107%;
-  }
-}
-
-@media (min-width: 800px) {
-  .hero-mobile {
-    display: none;
-  }
-  .icons {
-    display: block;
-  }
 }
 
 main {
@@ -191,9 +169,8 @@ p {
 
 footer {
   position: relative;
-  text-align: center;
+  color: #ffffff;
   z-index: 1;
-  width: 100vw;
   background-image: url("../images/mobile/image-footer.jpg");
   background-size: cover;
 }
@@ -204,6 +181,8 @@ footer .opacity {
   height: 100%;
   position: absolute;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 footer .no2 {
@@ -218,12 +197,11 @@ footer .no2 .n1 {
 
 footer h2 {
   margin-top: -44px;
-  color: white;
   margin-bottom: 24px;
+  color: #ffffff;
 }
 
 footer p {
-  color: white;
   margin-bottom: 32px;
   line-height: 26px;
   font-size: 18px;
@@ -232,11 +210,30 @@ footer p {
 
 footer .btn1 {
   background-color: #855fb1;
-  color: #ffffff;
-  margin-bottom: 72px;
+  margin-bottom: 50px;
+  display: inline-block;
 }
 
-footer .btn1 span {
-  color: #d9b8ff;
+@media (min-width: 600px) {
+  header .hero-mobile {
+    width: 107%;
+  }
+  header .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .buttons .btn2 {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  header .hero-mobile {
+    display: none;
+  }
+  header .hero-desktop {
+    display: block;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
