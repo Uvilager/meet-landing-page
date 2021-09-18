@@ -48,7 +48,7 @@ header h1 {
   font-size: 40px;
   color: #28283d;
   margin-bottom: 24px;
-  padding: 0 50px;
+  padding: 0 24px;
 }
 
 header p {
@@ -152,9 +152,11 @@ h2 {
   font-size: 32px;
   color: #28283d;
   margin-bottom: 32px;
+  padding: 0 50px;
 }
 
 h3 {
+  padding: 0 24px;
   color: #4d96a9;
   line-height: 26px;
   font-size: 16px;
@@ -165,6 +167,10 @@ h3 {
 
 p {
   padding: 0px 24px;
+  line-height: 26px;
+  color: #87879d;
+  font-size: 16px;
+  margin-bottom: 32px;
 }
 
 footer {
@@ -199,6 +205,7 @@ footer h2 {
   margin-top: -44px;
   margin-bottom: 24px;
   color: #ffffff;
+  padding: 0 24px;
 }
 
 footer p {
@@ -206,12 +213,17 @@ footer p {
   line-height: 26px;
   font-size: 18px;
   padding: 0 24px;
+  color: #ffffff;
 }
 
 footer .btn1 {
   background-color: #855fb1;
   margin-bottom: 50px;
   display: inline-block;
+}
+
+footer .btn1 span {
+  color: #d9b8ff;
 }
 
 @media (min-width: 600px) {
@@ -226,6 +238,16 @@ footer .btn1 {
   header .buttons .btn2 {
     margin-left: 16px;
   }
+  header p {
+    width: 457px;
+  }
+  main .text {
+    width: 573px;
+    margin: 0 auto;
+  }
+  main .text p {
+    padding: 0;
+  }
 }
 
 @media (min-width: 800px) {
@@ -234,6 +256,15 @@ footer .btn1 {
   }
   header .hero-desktop {
     display: block;
+  }
+  header .hero-desktop .image-left {
+    left: -50%;
+  }
+  main .text {
+    width: 540px;
+  }
+  main .text p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
