@@ -1,11 +1,224 @@
-@import "variables";
+@import 'variables';
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: $backgroundColor;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+//Header
+
+header {
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    .meet {
+        margin: 48px auto 54px auto;
+    }
+    .icons {
+        display: none;
+    }
+
+    .hero-mobile {
+        width: 110%;
+        margin-bottom: 54px;
+    }
+
+    h1 {
+        line-height: 44px;
+        font-size: 40px;
+        color: #28283d;
+        margin-bottom: 24px;
+        padding: 0 24px;
+    }
+
+    p {
+        padding: 0 24px;
+        line-height: 26px;
+        color: #87879d;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+}
+
+.btn1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    border: none;
+    background-color: #4d96a9;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    width: 193px;
+    height: 58px;
+    margin-bottom: 16px;
+    span {
+        color: #8fe3f9;
+    }
+}
+.btn2 {
+    font-family: 'Red Hat Display', sans-serif;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: none;
+    width: 139px;
+    height: 58px;
+    background-color: #855fb1;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 64px;
+}
+
+.line {
+    margin: 0 auto;
+    height: 84px;
+    width: 1px;
+    background-color: #d8d8d8;
+    border-color: #87879d;
+}
+
+.n1 {
+    display: flex;
+    color: #87879d;
+    border-radius: 50%;
+    border: 1px solid #d8d8d8;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    span {
+        font-size: 16px;
+        line-height: 26px;
+        color: #87879d;
+        font-weight: 900;
+    }
+}
+
+@media (min-width: 600px) {
+    .hero-mobile {
+        width: 107%;
+    }
+}
+
+@media (min-width: 800px) {
+    .hero-mobile {
+        display: none;
+    }
+    .icons {
+        display: block;
+    }
+}
+
+//Main
+
+main {
+    margin-top: 64px;
+}
+
+.kontenjer {
+    display: flex wrap;
+    margin-bottom: 40px;
+    width: 100%;
+    img {
+        width: 40%;
+        border-radius: 8px;
+        margin-bottom: 24px;
+        &:nth-child(odd) {
+            margin-right: 12px;
+        }
+
+        &:nth-child(even) {
+            margin-left: 12px;
+        }
+    }
+}
+
+.text {
+    margin-bottom: 176px;
+}
+
+h2 {
+    line-height: 36px;
+    font-size: 32px;
+    color: #28283d;
+    margin-bottom: 32px;
+}
+
+h3 {
+    color: #4d96a9;
+    line-height: 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 4px;
+}
+
+p {
+    padding: 0px 24px;
+}
+
+//Footer
+
+footer {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 100vw;
+    background-image: url('../images/mobile/image-footer.jpg');
+    background-size: cover;
+    .opacity {
+        z-index: -1;
+        background: rgba(77, 150, 168, 0.9);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    .no2 {
+        transform: translateY(-112px);
+        display: inline-block;
+        .n1 {
+            background-color: #ffffff;
+            // span {
+            //     font-size: 16px;
+            //     line-height: 26px;
+            //     color: #87879d;
+            //     font-weight: 900;
+            // }
+        }
+    }
+    h2 {
+        margin-top: -44px;
+        color: white;
+        margin-bottom: 24px;
+    }
+    p {
+        color: white;
+        margin-bottom: 32px;
+        line-height: 26px;
+        font-size: 18px;
+        padding: 0 24px;
+    }
+    .btn1 {
+        background-color: #855fb1;
+        color: #ffffff;
+        margin-bottom: 72px;
+        span {
+            color: #d9b8ff;
+        }
+    }
 }
