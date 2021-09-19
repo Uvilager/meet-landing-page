@@ -232,7 +232,7 @@ footer p {
 
 footer .btn1 {
   background-color: #855fb1;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
   display: inline-block;
 }
 
@@ -299,6 +299,18 @@ footer .btn1:hover span {
   main .text h3 {
     margin-bottom: 16px;
   }
+  footer {
+    background-image: url("../images/tablet/image-footer.jpg");
+    background-position: center;
+  }
+  footer .flex-footer h2 {
+    font-size: 40px;
+    line-height: 44px;
+    padding: 0px 156px;
+  }
+  footer .flex-footer p {
+    padding: 0 98px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -339,9 +351,43 @@ footer .btn1:hover span {
   main .text p {
     font-size: 18px;
   }
+  footer {
+    background-image: url("../images/desktop/image-footer.jpg");
+    background-position: center;
+    padding-bottom: 140px;
+  }
+  footer .flex-footer {
+    width: 78%;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 11%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .flex-footer h2 {
+    max-width: 350px;
+    margin: 0px;
+    padding: 0px;
+  }
+  footer .flex-footer p {
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+  }
+  footer .flex-footer .btn1 {
+    margin: 0px;
+    padding: 0px;
+    min-width: 193px;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 800px) and (min-width: 1024px) {
   header .header-text p {
     padding: 0 84px;
     font-size: 18px;
