@@ -287,9 +287,17 @@ footer .btn1:hover span {
   main .text {
     width: 573px;
     margin: 0 auto;
+    margin-bottom: 192px;
   }
   main .text p {
     padding: 0;
+  }
+  main .text h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  main .text h3 {
+    margin-bottom: 16px;
   }
 }
 
@@ -326,6 +334,7 @@ footer .btn1:hover span {
   }
   main .text {
     width: 540px;
+    margin-bottom: 184px;
   }
   main .text p {
     font-size: 18px;
