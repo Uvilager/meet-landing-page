@@ -12,6 +12,7 @@ body {
 }
 
 header {
+  overflow-x: hidden;
   background-color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +41,7 @@ header .hero-desktop {
 
 header .hero-mobile {
   width: 110%;
-  margin-bottom: 54px;
+  margin-bottom: 48px;
 }
 
 header h1 {
@@ -229,14 +230,17 @@ footer .btn1 span {
 @media (min-width: 600px) {
   header .hero-mobile {
     width: 107%;
+    margin-bottom: 72px;
   }
   header .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 74px;
   }
   header .buttons .btn2 {
     margin-left: 16px;
+    margin-bottom: 0px;
   }
   header p {
     width: 457px;
@@ -255,16 +259,48 @@ footer .btn1 span {
     display: none;
   }
   header .hero-desktop {
+    position: relative;
+    width: 100%;
     display: block;
+    background-size: cover;
   }
   header .hero-desktop .image-left {
-    left: -50%;
+    width: 30%;
+    left: -2.3%;
+    position: absolute;
+  }
+  header .hero-desktop .image-right {
+    margin-top: 55px;
+    width: 30%;
+    right: -2.3%;
+    position: absolute;
+  }
+  header .header-text {
+    margin-top: 47px;
+    width: 44.4%;
+  }
+  header .header-text p {
+    width: auto;
+  }
+  header .buttons {
+    margin-bottom: 110px;
   }
   main .text {
     width: 540px;
   }
   main .text p {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .header-text p {
+    padding: 0 84px;
+    font-size: 18px;
+  }
+  header .header-text h1 {
+    font-size: 64px;
+    line-height: 64px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

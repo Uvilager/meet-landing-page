@@ -15,6 +15,7 @@ body {
 //Header
 
 header {
+    overflow-x: hidden;
     background-color: $backgroundColor;
     display: flex;
     justify-content: center;
@@ -31,7 +32,7 @@ header {
 
     .hero-mobile {
         width: 110%;
-        margin-bottom: 54px;
+        margin-bottom: 48px;
     }
 
     h1 {
@@ -203,20 +204,28 @@ footer {
 }
 
 @media (min-width: 600px) {
+    //Header responsive 600px
+
     header {
         .hero-mobile {
             width: 107%;
+            margin-bottom: 72px;
         }
         .buttons {
             display: flex;
+            margin-bottom: 74px;
             .btn2 {
                 margin-left: 16px;
+                margin-bottom: 0px;
             }
         }
         p {
             width: 457px;
         }
     }
+
+    //Main responsive 600px
+
     main {
         .text {
             width: 573px;
@@ -229,22 +238,64 @@ footer {
 }
 
 @media (min-width: 800px) {
+    //Header responsive 800px
+
     header {
         .hero-mobile {
             display: none;
         }
         .hero-desktop {
+            position: relative;
+            width: 100%;
             display: block;
+            background-size: cover;
             .image-left {
-                left: -50%;
+                width: 30%;
+                left: -2.3%;
+                position: absolute;
+            }
+            .image-right {
+                margin-top: 55px;
+                width: 30%;
+                right: -2.3%;
+                position: absolute;
             }
         }
+        .header-text {
+            margin-top: 47px;
+            width: 44.4%;
+            p {
+                width: auto;
+            }
+        }
+        .buttons {
+            margin-bottom: 110px;
+        }
+
+        //Main responsive 800px
     }
     main {
         .text {
             width: 540px;
             p {
                 font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    //Header responsive 1024px
+
+    header {
+        .header-text {
+            p {
+                padding: 0 84px;
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 64px;
+                line-height: 64px;
             }
         }
     }
