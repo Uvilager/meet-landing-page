@@ -75,6 +75,7 @@ header p {
   width: 193px;
   height: 58px;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .btn1 span,
@@ -86,6 +87,18 @@ header p {
   width: 139px;
   background-color: #855fb1;
   margin-bottom: 64px;
+}
+
+.btn1:hover {
+  background-color: #71c0d4;
+}
+
+.btn1:hover span {
+  color: #8fe3f9;
+}
+
+.btn2:hover {
+  background-color: #b18bdd;
 }
 
 .line {
@@ -224,6 +237,14 @@ footer .btn1 {
 }
 
 footer .btn1 span {
+  color: #d9b8ff;
+}
+
+footer .btn1:hover {
+  background-color: #b18bdd;
+}
+
+footer .btn1:hover span {
   color: #d9b8ff;
 }
 
