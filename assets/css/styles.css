@@ -139,7 +139,7 @@ main {
 
 .kontenjer {
   display: flex wrap;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   width: 100%;
 }
 
@@ -266,6 +266,24 @@ footer .btn1:hover span {
   header p {
     width: 457px;
   }
+  main {
+    margin-top: 73px;
+    margin-bottom: 48px;
+  }
+  main .kontenjer {
+    padding: 0 40px;
+  }
+  main .kontenjer img {
+    width: 22.5%;
+  }
+  main .kontenjer img:nth-child(n) {
+    margin-right: 11px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  main .kontenjer img:nth-child(4) {
+    margin-right: 0px;
+  }
   main .text {
     width: 573px;
     margin: 0 auto;
@@ -322,6 +340,23 @@ footer .btn1:hover span {
   header .header-text h1 {
     font-size: 64px;
     line-height: 64px;
+  }
+  main {
+    margin-top: 64px;
+    margin-bottom: 80px;
+  }
+  main .kontenjer {
+    padding: 0 165px;
+  }
+  main .kontenjer img {
+    width: 21%;
+  }
+  main .kontenjer img:nth-child(n) {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  main .kontenjer img:nth-child(4) {
+    margin-right: 0px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

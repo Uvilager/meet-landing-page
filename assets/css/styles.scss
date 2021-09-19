@@ -122,7 +122,7 @@ main {
 
 .kontenjer {
     display: flex wrap;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     width: 100%;
     img {
         width: 40%;
@@ -245,6 +245,22 @@ footer {
     //Main responsive 600px
 
     main {
+        margin-top: 73px;
+        margin-bottom: 48px;
+        .kontenjer {
+            padding: 0 40px;
+            img {
+                width: 22.5%;
+                &:nth-child(n) {
+                    margin-right: 11px;
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0px;
+                }
+            }
+        }
         .text {
             width: 573px;
             margin: 0 auto;
@@ -314,6 +330,23 @@ footer {
             h1 {
                 font-size: 64px;
                 line-height: 64px;
+            }
+        }
+    }
+    main {
+        margin-top: 64px;
+        margin-bottom: 80px;
+        .kontenjer {
+            padding: 0 165px;
+            img {
+                width: 21%;
+                &:nth-child(n) {
+                    margin-right: 30px;
+                    margin-left: 0px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0px;
+                }
             }
         }
     }
