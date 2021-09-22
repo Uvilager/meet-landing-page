@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,12 +36,78 @@ header .meet {
 }
 
 header .hero-desktop {
-  display: none;
+  width: 110%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
-header .hero-mobile {
-  width: 110%;
-  margin-bottom: 48px;
+header .hero-desktop img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+header .hero-desktop .testleft {
+  margin-right: 4.16%;
+  height: auto;
+  left: -2.3%;
+  gap: 8.33%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+header .hero-desktop .testleft .left {
+  padding-top: 50%;
+}
+
+header .hero-desktop .testleft .left .test1 {
+  margin-bottom: 20%;
+}
+
+header .hero-desktop .testleft .middle .test3 {
+  margin-bottom: 20%;
+}
+
+header .hero-desktop .testleft .right {
+  padding-top: 50%;
+}
+
+header .hero-desktop .testleft .right .test5 {
+  margin-bottom: 20%;
+}
+
+header .hero-desktop .testright {
+  margin-left: 4.16%;
+  height: auto;
+  right: -2.3%;
+  gap: 8.33%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+header .hero-desktop .testright .left .test1 {
+  margin-bottom: 20%;
+}
+
+header .hero-desktop .testright .middle {
+  padding-top: 50%;
+}
+
+header .hero-desktop .testright .middle .test3 {
+  margin-bottom: 20%;
+}
+
+header .hero-desktop .testright .right .test5 {
+  margin-bottom: 20%;
+}
+
+header .header-text {
+  margin-top: 48px;
 }
 
 header h1 {
@@ -249,9 +315,11 @@ footer .btn1:hover span {
 }
 
 @media (min-width: 600px) {
-  header .hero-mobile {
+  header .hero-desktop {
     width: 107%;
-    margin-bottom: 72px;
+  }
+  header .header-text {
+    margin-top: 72px;
   }
   header .buttons {
     display: -webkit-box;
@@ -314,25 +382,72 @@ footer .btn1:hover span {
 }
 
 @media (min-width: 800px) {
-  header .hero-mobile {
-    display: none;
-  }
   header .hero-desktop {
     position: relative;
     width: 100%;
-    display: block;
-    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
   }
-  header .hero-desktop .image-left {
-    width: 30%;
+  header .hero-desktop img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  header .hero-desktop .testleft {
+    height: auto;
     left: -2.3%;
+    gap: 8.33%;
     position: absolute;
-  }
-  header .hero-desktop .image-right {
-    margin-top: 55px;
     width: 30%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  header .hero-desktop .testleft .left {
+    padding-top: 50%;
+  }
+  header .hero-desktop .testleft .left .test1 {
+    margin-bottom: 20%;
+  }
+  header .hero-desktop .testleft .middle .test3 {
+    margin-bottom: 20%;
+  }
+  header .hero-desktop .testleft .right {
+    padding-top: 50%;
+  }
+  header .hero-desktop .testleft .right .test5 {
+    margin-bottom: 20%;
+  }
+  header .hero-desktop .testright {
+    height: auto;
     right: -2.3%;
+    gap: 8.33%;
     position: absolute;
+    width: 30%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  header .hero-desktop .testright .left {
+    padding-top: 50%;
+  }
+  header .hero-desktop .testright .left .test1 {
+    margin-bottom: 20%;
+  }
+  header .hero-desktop .testright .middle {
+    padding-top: 100%;
+  }
+  header .hero-desktop .testright .middle .test3 {
+    margin-bottom: 20%;
+  }
+  header .hero-desktop .testright .right {
+    padding-top: 50%;
+  }
+  header .hero-desktop .testright .right .test5 {
+    margin-bottom: 20%;
   }
   header .header-text {
     margin-top: 47px;
@@ -389,7 +504,7 @@ footer .btn1:hover span {
 
 @media (min-width: 800px) and (min-width: 1024px) {
   header .header-text p {
-    padding: 0 84px;
+    padding: 0 44px;
     font-size: 18px;
   }
   header .header-text h1 {

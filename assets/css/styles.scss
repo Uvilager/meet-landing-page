@@ -15,7 +15,7 @@ body {
 //Header
 
 header {
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: $backgroundColor;
     display: flex;
     justify-content: center;
@@ -23,16 +23,72 @@ header {
     text-align: center;
     align-items: center;
     position: relative;
+
     .meet {
         margin: 48px auto 54px auto;
     }
+
     .hero-desktop {
-        display: none;
+        width: 110%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .testleft {
+            margin-right: 4.16%;
+            height: auto;
+            left: -2.3%;
+            gap: 8.33%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .left {
+                padding-top: 50%;
+                .test1 {
+                    margin-bottom: 20%;
+                }
+            }
+            .middle {
+                .test3 {
+                    margin-bottom: 20%;
+                }
+            }
+            .right {
+                padding-top: 50%;
+                .test5 {
+                    margin-bottom: 20%;
+                }
+            }
+        }
+        .testright {
+            margin-left: 4.16%;
+            height: auto;
+            right: -2.3%;
+            gap: 8.33%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .left {
+                .test1 {
+                    margin-bottom: 20%;
+                }
+            }
+            .middle {
+                padding-top: 50%;
+                .test3 {
+                    margin-bottom: 20%;
+                }
+            }
+            .right {
+                .test5 {
+                    margin-bottom: 20%;
+                }
+            }
+        }
     }
 
-    .hero-mobile {
-        width: 110%;
-        margin-bottom: 48px;
+    .header-text {
+        margin-top: 48px;
     }
 
     h1 {
@@ -225,9 +281,11 @@ footer {
     //Header responsive 600px
 
     header {
-        .hero-mobile {
+        .hero-desktop {
             width: 107%;
-            margin-bottom: 72px;
+        }
+        .header-text {
+            margin-top: 72px;
         }
         .buttons {
             display: flex;
@@ -298,24 +356,67 @@ footer {
     //Header responsive 800px
 
     header {
-        .hero-mobile {
-            display: none;
-        }
         .hero-desktop {
             position: relative;
             width: 100%;
-            display: block;
-            background-size: cover;
-            .image-left {
-                width: 30%;
-                left: -2.3%;
-                position: absolute;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            img {
+                width: 100%;
+                border-radius: 50%;
             }
-            .image-right {
-                margin-top: 55px;
-                width: 30%;
-                right: -2.3%;
+            .testleft {
+                height: auto;
+                left: -2.3%;
+                gap: 8.33%;
                 position: absolute;
+                width: 30%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                .left {
+                    padding-top: 50%;
+                    .test1 {
+                        margin-bottom: 20%;
+                    }
+                }
+                .middle {
+                    .test3 {
+                        margin-bottom: 20%;
+                    }
+                }
+                .right {
+                    padding-top: 50%;
+                    .test5 {
+                        margin-bottom: 20%;
+                    }
+                }
+            }
+            .testright {
+                height: auto;
+                right: -2.3%;
+                gap: 8.33%;
+                position: absolute;
+                width: 30%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                .left {
+                    padding-top: 50%;
+                    .test1 {
+                        margin-bottom: 20%;
+                    }
+                }
+                .middle {
+                    padding-top: 100%;
+                    .test3 {
+                        margin-bottom: 20%;
+                    }
+                }
+                .right {
+                    padding-top: 50%;
+                    .test5 {
+                        margin-bottom: 20%;
+                    }
+                }
             }
         }
         .header-text {
@@ -379,7 +480,7 @@ footer {
         header {
             .header-text {
                 p {
-                    padding: 0 84px;
+                    padding: 0 44px;
                     font-size: 18px;
                 }
                 h1 {
