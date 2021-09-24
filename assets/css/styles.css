@@ -46,6 +46,7 @@ header .hero-desktop {
 header .hero-desktop img {
   width: 100%;
   border-radius: 50%;
+  max-width: 110px;
 }
 
 header .hero-desktop .testleft,
@@ -118,6 +119,7 @@ header h1 {
 }
 
 header p {
+  font-weight: 500;
   padding: 0 24px;
   line-height: 26px;
   color: #87879d;
@@ -191,11 +193,12 @@ header p {
           justify-content: center;
 }
 
-.n1 span {
+.n1 a {
   font-size: 16px;
   line-height: 26px;
   color: #87879d;
   font-weight: 900;
+  text-decoration: none;
 }
 
 main {
@@ -230,7 +233,7 @@ h2 {
   font-size: 32px;
   color: #28283d;
   margin-bottom: 32px;
-  padding: 0 50px;
+  padding: 0 24px;
 }
 
 h3 {
@@ -245,6 +248,7 @@ h3 {
 
 p {
   padding: 0px 24px;
+  font-weight: 500;
   line-height: 26px;
   color: #87879d;
   font-size: 16px;
@@ -337,13 +341,13 @@ footer .Download:hover span {
     margin-bottom: 48px;
   }
   main .image-wrapper {
-    padding: 0 40px;
+    padding: 0 39px;
   }
   main .image-wrapper img {
-    width: 22.5%;
+    width: 23.85%;
   }
   main .image-wrapper img:nth-child(n) {
-    margin-right: 11px;
+    margin-right: 4px;
     margin-left: 0px;
     margin-bottom: 0px;
   }
@@ -471,6 +475,19 @@ footer .Download:hover span {
   }
   main .image-wrapper img:nth-child(n) {
     margin-right: 30px;
+    margin-left: 0px;
+  }
+  main .image-wrapper img:nth-child(4) {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main .image-wrapper img {
+    width: 23%;
+  }
+  main .image-wrapper img:nth-child(n) {
+    margin-right: 26px;
     margin-left: 0px;
   }
   main .image-wrapper img:nth-child(4) {
