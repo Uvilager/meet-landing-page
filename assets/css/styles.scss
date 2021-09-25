@@ -1,0 +1,477 @@
+@import 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: $backgroundColor;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+//Header
+
+header {
+    overflow: hidden;
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+    .meet {
+        margin: 48px auto 54px auto;
+    }
+
+    .hero-desktop {
+        width: 110%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        img {
+            width: 100%;
+            border-radius: 50%;
+            max-width: 110px;
+        }
+        .testleft,
+        .testright {
+            height: auto;
+            gap: 8.33%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .left {
+                padding-top: 50%;
+                .test1 {
+                    margin-bottom: 20%;
+                }
+            }
+            .middle {
+                .test3 {
+                    margin-bottom: 20%;
+                }
+            }
+            .right {
+                padding-top: 50%;
+                .test5 {
+                    margin-bottom: 20%;
+                }
+            }
+        }
+        .testleft {
+            margin-right: 4.16%;
+            left: -2.3%;
+        }
+        .testright {
+            margin-left: 4.16%;
+            right: -2.3%;
+            .left {
+                padding-top: 0;
+            }
+            .middle {
+                padding-top: 50%;
+            }
+            .right {
+                padding-top: 0;
+            }
+        }
+    }
+
+    .header-text {
+        margin-top: 48px;
+    }
+
+    h1 {
+        line-height: 44px;
+        font-size: 40px;
+        color: $headerColor;
+        margin-bottom: 24px;
+        padding: 0 24px;
+    }
+
+    p {
+        font-weight: 500;
+        padding: 0 24px;
+        line-height: 26px;
+        color: $paragraphGray;
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+}
+
+.Download,
+.About {
+    margin: 0 auto;
+    display: block;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    border: none;
+    background-color: $downloadButtonColor;
+    border-radius: 30px;
+    color: $backgroundColor;
+    font-size: 16px;
+    line-height: 26px;
+    width: 193px;
+    height: 58px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    span {
+        color: $downloadSpan;
+    }
+}
+.About {
+    width: 139px;
+    background-color: $aboutButtonColor;
+    margin-bottom: 64px;
+}
+
+.Download:hover {
+    background-color: $downloadButtonHover;
+    span {
+        color: $downloadSpanHover;
+    }
+}
+
+.About:hover {
+    background-color: $aboutButtonHover;
+}
+
+.line {
+    margin: 0 auto;
+    height: 84px;
+    width: 1px;
+    background-color: $lineGray;
+    border-color: $paragraphGray;
+}
+
+.n1 {
+    display: flex;
+    color: $paragraphGray;
+    border-radius: 50%;
+    border: 1px solid $lineGray;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    a {
+        font-size: 16px;
+        line-height: 26px;
+        color: $paragraphGray;
+        font-weight: 900;
+        text-decoration: none;
+    }
+}
+
+//Main
+
+main {
+    margin-top: 64px;
+}
+
+.image-wrapper {
+    margin-bottom: 44px;
+    width: 100%;
+    img {
+        width: 40%;
+        border-radius: 8px;
+        margin-bottom: 24px;
+        &:nth-child(odd) {
+            margin-right: 12px;
+        }
+
+        &:nth-child(even) {
+            margin-left: 12px;
+        }
+    }
+}
+
+.text {
+    margin-bottom: 176px;
+}
+
+h2 {
+    line-height: 36px;
+    font-size: 32px;
+    color: $headerColor;
+    margin-bottom: 32px;
+    padding: 0 24px;
+}
+
+h3 {
+    padding: 0 24px;
+    color: $downloadButtonColor;
+    line-height: 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 4px;
+}
+
+p {
+    padding: 0px 24px;
+    font-weight: 500;
+    line-height: 26px;
+    color: $paragraphGray;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+//Footer
+
+footer {
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+    background-image: url('../images/mobile/image-footer.jpg');
+    background-size: cover;
+    .opacity {
+        z-index: -1;
+        background: rgba(77, 150, 168, 0.9);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .no2 {
+        transform: translateY(-112px);
+        display: inline-block;
+        .n1 {
+            background-color: $backgroundColor;
+        }
+    }
+    h2 {
+        margin-top: -44px;
+        margin-bottom: 24px;
+        color: $backgroundColor;
+        padding: 0 24px;
+    }
+    p {
+        margin-bottom: 32px;
+        line-height: 26px;
+        font-size: 18px;
+        padding: 0 24px;
+        color: $backgroundColor;
+    }
+    .Download {
+        background-color: $aboutButtonColor;
+        margin-bottom: 72px;
+        display: inline-block;
+        span {
+            color: $aboutSpan;
+        }
+    }
+    .Download:hover {
+        background-color: $aboutButtonHover;
+        span {
+            color: $aboutSpan;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    //Header responsive 600px
+
+    header {
+        .hero-desktop {
+            width: 107%;
+        }
+        .header-text {
+            margin-top: 72px;
+        }
+        .buttons {
+            display: flex;
+            margin-bottom: 74px;
+            .About {
+                margin-left: 16px;
+                margin-bottom: 0px;
+            }
+        }
+        p {
+            width: 457px;
+        }
+    }
+
+    //Main responsive 600px
+
+    main {
+        margin-top: 73px;
+        margin-bottom: 48px;
+        .image-wrapper {
+            padding: 0 39px;
+            img {
+                width: 23.85%;
+                &:nth-child(n) {
+                    margin-right: 4px;
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0px;
+                }
+            }
+        }
+        .text {
+            width: 573px;
+            margin: 0 auto;
+            margin-bottom: 192px;
+            p {
+                padding: 0;
+            }
+            h2 {
+                font-size: 40px;
+                line-height: 44px;
+            }
+            h3 {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    //Footer responsive 600
+    footer {
+        background-image: url('../images/tablet/image-footer.jpg');
+        background-position: center;
+        .flex-footer {
+            h2 {
+                font-size: 40px;
+                line-height: 44px;
+                padding: 0px 156px;
+            }
+            p {
+                padding: 0 98px;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    //Header responsive 800px
+
+    header {
+        .hero-desktop {
+            width: 100%;
+            .testleft,
+            .testright {
+                position: absolute;
+                width: 30%;
+            }
+            .testright {
+                .left {
+                    padding-top: 50%;
+                }
+                .middle {
+                    padding-top: 100%;
+                }
+                .right {
+                    padding-top: 50%;
+                }
+            }
+        }
+        .header-text {
+            margin-top: 47px;
+            width: 44.4%;
+            p {
+                width: auto;
+            }
+        }
+        .buttons {
+            margin-bottom: 110px;
+        }
+
+        //Main responsive 800px
+    }
+    main {
+        .text {
+            width: 540px;
+            margin-bottom: 184px;
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    //Footer responsive 800px
+
+    footer {
+        background-image: url('../images/desktop/image-footer.jpg');
+        background-position: center;
+        padding-bottom: 140px;
+        .flex-footer {
+            width: 78%;
+            text-align: left;
+            display: flex;
+            margin-left: 11%;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+                max-width: 350px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            p {
+                margin: 0px;
+                padding: 0px;
+                max-width: 350px;
+            }
+
+            .Download {
+                margin: 0px;
+                padding: 0px;
+                min-width: 193px;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        //Header responsive 1024px
+
+        header {
+            .header-text {
+                p {
+                    padding: 0 44px;
+                    font-size: 18px;
+                }
+                h1 {
+                    font-size: 64px;
+                    line-height: 64px;
+                }
+            }
+        }
+        main {
+            margin-top: 64px;
+            margin-bottom: 80px;
+            .image-wrapper {
+                padding: 0 165px;
+                img {
+                    width: 21%;
+                    &:nth-child(n) {
+                        margin-right: 30px;
+                        margin-left: 0px;
+                    }
+                    &:nth-child(4) {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1440px) {
+    main {
+        .image-wrapper {
+            img {
+                width: 23%;
+                &:nth-child(n) {
+                    margin-right: 26px;
+                    margin-left: 0px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
